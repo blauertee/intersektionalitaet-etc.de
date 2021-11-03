@@ -1,3 +1,10 @@
+<?php
+if(get_user_setting('work_in_progress')) {
+	require('./workinprogress.php');
+	die();
+}
+?>
+
 <?php get_header(); ?>
 
 	<main role="main">
