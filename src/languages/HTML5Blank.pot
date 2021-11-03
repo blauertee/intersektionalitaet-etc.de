@@ -57,7 +57,7 @@ msgid "Sorry, nothing to display."
 msgstr ""
 
 #: ../category.php:6
-msgid "Category:"
+msgid "Categories for"
 msgstr ""
 
 #: ../comments.php:3
@@ -189,6 +189,10 @@ msgstr ""
 
 #: ../tag.php:6
 msgid "Tag Archive: "
+msgstr ""
+
+#: ../searchform.php:3
+msgid "To search, type and hit enter."
 msgstr ""
 
 #~ msgid "%s results for "

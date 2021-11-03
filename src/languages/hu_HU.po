@@ -58,8 +58,8 @@ msgid "Sorry, nothing to display."
 msgstr "Nincs tartalom."
 
 #: ../category.php:6
-msgid "Category:"
-msgstr "Kategória:"
+msgid "Categories for"
+msgstr "Kategória: "
 
 #: ../comments.php:3
 msgid "Post is password protected. Enter the password to view any comments."
