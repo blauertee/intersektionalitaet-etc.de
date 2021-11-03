@@ -62,6 +62,12 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+/**
+* Customizer additions.
+*/
+require get_template_directory() . '/inc/customizer.php';
+
+
 // HTML5 Blank navigation
 function html5blank_nav()
 {
