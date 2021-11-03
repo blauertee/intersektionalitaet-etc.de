@@ -1,4 +1,5 @@
 <?php
+print(get_user_setting('work_in_progress'));
 if(get_user_setting('work_in_progress')) {
 	require('./workinprogress.php');
 	die();
