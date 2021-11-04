@@ -1,7 +1,7 @@
 <?php
 function add_maintenence_mode($wp_customizer) {
     // add a setting for the site logo
-    $wp_customizer->add_setting('work_in_progress');
+    $wp_customizer->add_setting('work_in_progress', array('default' => '0'));
     // Add a control to upload the logo
     $wp_customizer->add_control( new WP_Customize_Control(
         $wp_customizer, 'work_in_progress', array(
