@@ -1,6 +1,6 @@
 <?php
-if(get_option('work_in_progress')) {
-	require('./workinprogress.php');
+if(get_theme_mod('work_in_progress') && !is_user_logged_in()) {
+	require(get_theme_file_path('/workinprogress.php'));
 	die();
 }
 ?>
