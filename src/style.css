@@ -27,10 +27,10 @@
 }
 /* html element 62.5% font-size for REM use */
 html {
-	font-size:62.5%;
+	font-size:17px;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	color:#444;
 }
 /* clear */
@@ -77,7 +77,7 @@ input:focus {
 .wrapper {
 	max-width:1280px;
 	width:95%;
-	margin:0 auto;
+	margin:20px auto;
 	position:relative;
 }
 /* header */
@@ -109,6 +109,87 @@ input:focus {
 \*------------------------------------*/
 
 
+/* home page */
+
+
+.home-page .wp-block-group__inner-container {
+	display: inline-block;
+	max-width: 800px;
+	text-align: justify;
+	padding: 10px;
+}
+
+.home-page article .wp-block-group {
+	margin: 150px 0 180px 0;
+}
+
+
+.home-page article .wp-block-group:nth-child(n+1) {
+	text-align: right;
+}
+
+.home-page article .wp-block-group:nth-child(2n) {
+	text-align: left;
+}
+
+
+.home-page article .wp-block-group:nth-child(n+1) .wp-block-group__inner-container{
+	color: #fff;
+	border-style: solid;
+	border-width: 27px 10.5px 32px 14.3px;
+	border-image-source: url('./img/Box1.svg');
+	border-image-repeat: round;
+	border-image-slice: 27% 10.5% 32% 14.3% fill;
+	border-image-width: 27% 10.5% 32% 14.3%;
+	border-image-outset: 2 9 2 9;
+}
+
+.home-page article .wp-block-group:nth-child(n+2) .wp-block-group__inner-container{
+	color: #000;
+	border-style: solid;
+	border-width: 27px 10.5px 32px 14.3px;
+	border-image-source: url('./img/Box2.svg');
+	border-image-repeat: round;
+	border-image-slice: 27% 10.5% 32% 14.3% fill;
+	border-image-width: 27% 10.5% 32% 14.3%;
+	border-image-outset: 4 6 4 7;
+}
+
+.home-page article .wp-block-group:nth-child(n+3) .wp-block-group__inner-container{
+	color: #fff;
+	border-style: solid;
+	border-width: 27px 10.5px 32px 14.3px;
+	border-image-source: url('./img/Box3.svg');
+	border-image-repeat: round;
+	border-image-slice: 27% 10.5% 32% 14.3% fill;
+	border-image-width: 27% 10.5% 32% 14.3%;
+	border-image-outset: 4 8 2 9;
+}
+
+.home-page article .wp-block-group:nth-child(n+4) .wp-block-group__inner-container{
+	color: #000;
+	border-style: solid;
+	border-width: 27px 10.5px 32px 14.3px;
+	border-image-source: url('./img/Box4.svg');
+	border-image-repeat: round;
+	border-image-slice: 27% 10.5% 32% 14.3% fill;
+	border-image-width: 27% 10.5% 32% 14.3%;
+	border-image-outset: 2 8 2 9;
+
+}
+
+.home-page article .wp-block-group:nth-child(n+5) .wp-block-group__inner-container{
+	color: #fff;
+	border-style: solid;
+	border-width: 27px 10.5px 32px 14.3px;
+	border-image-source: url('./img/Box5.svg');
+	border-image-repeat: round;
+	border-image-slice: 27% 10.5% 32% 14.3% fill;
+	border-image-width: 27% 10.5% 32% 14.3%;
+	border-image-outset: 2 8 2 9;
+}
+
+
 
 /*------------------------------------*\
     IMAGES
@@ -120,16 +201,14 @@ input:focus {
 	TYPOGRAPHY
 \*------------------------------------*/
 
-@font-face {
-	font-family:'Font-Name';
-	src:url('fonts/font-name.eot');
-	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-		url('fonts/font-name.woff') format('woff'),
-		url('fonts/font-name.ttf') format('truetype'),
-		url('fonts/font-name.svg#font-name') format('svg');
-    font-weight:normal;
-    font-style:normal;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+h2 {
+	font-size: 1.3em;
+	text-transform: uppercase;
 }
+
+
 
 /*------------------------------------*\
     RESPONSIVE

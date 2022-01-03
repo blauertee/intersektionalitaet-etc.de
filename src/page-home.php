@@ -16,7 +16,7 @@
 		<div class="logo-home">
 			<a href="<?php echo home_url(); ?>">
 				<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-				<img src="<?php echo get_template_directory_uri(); ?>/img/Logo.svg" alt="Logo" class="logo-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/Logo.svg" alt="Das 'et cetera' der Intersektionalität" class="logo-img">
 			</a>
 		</div>
 		<!-- /logo -->
@@ -25,11 +25,10 @@
 </header>
 <!-- /header -->
 
-	<main role="main">
+	<main role="main" class="home-page">
 		<!-- section -->
 		<section>
 
-			<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -37,8 +36,6 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
 				<br class="clear">
 
