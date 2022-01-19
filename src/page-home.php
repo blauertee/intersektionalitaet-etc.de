@@ -59,9 +59,13 @@
 		<?php endif; ?>
 
 		</section>
+		<section class="category-menu">
+			<?php
+			wp_nav_menu(array('theme_location' => 'category-menu'));
+			?>
+		</section>
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
