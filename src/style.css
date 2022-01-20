@@ -89,6 +89,7 @@ input:focus {
 .logo-home {
 	width: 60%;
 }
+
 .logo-img {
 
 }
@@ -104,6 +105,8 @@ input:focus {
 .footer {
 
 }
+
+
 
 #menu-footer {
 	list-style: none;
@@ -215,8 +218,111 @@ input:focus {
     PAGES
 \*------------------------------------*/
 
+/* archive page(s) */
+
+/* category menu */
+.archive.category .category-menu li:nth-child(1)::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -30px;
+	bottom: -30px;
+	right: -80px;
+	border-bottom: 2px solid #010101;
+}
+.archive.category .category-menu li.current-menu-item:nth-child(1)::before {
+	border-right: 2px solid #010101;
+}
+
+.archive.category .category-menu li.current-menu-item:nth-child(1) {
+	background: url('./img/Utopie_u_Praxis_blue.svg') 100% 100% no-repeat;
+}
+
+
+.archive.category .category-menu li:nth-child(2)::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -247px;
+	bottom: -30px;
+	right: -30px;
+	border-bottom: 2px solid #010101;
+}
+
+.archive.category .category-menu li.current-menu-item:nth-child(2) {
+	background: url('./img/Inters_u_Diskriminierung_blue.svg') 100% 100% no-repeat;
+
+}
+
+.archive.category .category-menu li.current-menu-item:nth-child(2)::before {
+	border-right: 2px solid #010101;
+	border-left: 2px solid #010101;
+}
+.archive.category .category-menu li:nth-child(3)::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -150px;
+	bottom: -30px;
+	right: -30px;
+	border-bottom: 2px solid #010101;
+}
+
+.archive.category .category-menu li.current-menu-item:nth-child(3) {
+	background: url('img/Umgang_m_Privilegien_blue.svg') 100% 100% no-repeat;
+}
+
+.archive.category .category-menu li.current-menu-item:nth-child(3)::before {
+	border-left: 2px solid #010101;
+}
+
+.archive.category .category-menu li.current-menu-item::before {
+	border-bottom: none;
+}
+
+.archive.category .category-menu li.current-menu-item {
+	color:blue;
+}
+
+.archive.category .category-menu li.current-menu-item a {
+	color:blue;
+	border-color: blue;
+}
+
+/* category loop */
+
+.archive.category article {
+	max-width: 300px;
+	max-height: 400px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+}
+
+.archive .author {
+	font-size: 1.4em;
+	margin: 0 0 0 0;
+}
+
+.archive .view-article {
+	color: rgba(0,0,0, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
 
 /* home page */
+
+.home .wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:40px auto;
+	position:relative;
+}
 
 
 .home-page .wp-block-group__inner-container {
@@ -363,69 +469,46 @@ padding: 0 8 0 11%;
 	content: '--';
 	color: rgba(0,0,0,0);
 }
-/*
-.home-page article .wp-block-group:nth-child(n+1) .wp-block-group__inner-container{
 
 
-	color: #fff;
 
-	border-style: solid;
-	border-width: 27px 10.5px 32px 14.3px;
-	border-image-source: url('./img/Box1.svg');
-	border-image-repeat: round;
-	border-image-slice: 27% 10.5% 32% 14.3% fill;
-	border-image-width: 27% 10.5% 32% 14.3%;
-	border-image-outset: 2 9 2 9;
+
+/*------------------------------------*\
+    SINGLE & PAGE
+\*------------------------------------*/
+
+.single .logo-home, .page-template-default .logo-home  {
+	width: 100%
 }
 
-.home-page article .wp-block-group:nth-child(n+2) .wp-block-group__inner-container{
-	color: #010101;
-	border-style: solid;
-	border-width: 27px 10.5px 32px 14.3px;
-	border-image-source: url('./img/Box2.svg');
-	border-image-repeat: round;
-	border-image-slice: 27% 10.5% 32% 14.3% fill;
-	border-image-width: 27% 10.5% 32% 14.3%;
-	border-image-outset: 4 6 4 7;
-	margin-bottom: 40px;
-	max-width: 900px;
+.single .wrapper, .page-template-default .wrapper {
+	max-width: 800px;
+}
+.single .author {
+	font-size: 2em;
+	margin: 0 0 0 0;
+}
+.single article h1:first-child {
+	margin: 0;
+}
+.footnotes {
+	list-style: none;
+	counter-reset: item;
+	padding: 0 0 0 20px;
+	font-size: 0.9em;
+}
+.footnotes li {
+	counter-increment: item;
+	padding: 0 0 0 0px;
 }
 
-.home-page article .wp-block-group:nth-child(n+3) .wp-block-group__inner-container{
-	color: #fff;
-	border-style: solid;
-	border-width: 27px 10.5px 32px 14.3px;
-	border-image-source: url('./img/Box3.svg');
-	border-image-repeat: round;
-	border-image-slice: 27% 10.5% 32% 14.3% fill;
-	border-image-width: 27% 10.5% 32% 14.3%;
-	border-image-outset: 4 8 2 9;
+.footnotes li::before{
+	content: counter(item);
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	font-weight: bold;
 }
-
-.home-page article .wp-block-group:nth-child(n+4) .wp-block-group__inner-container{
-	color: #010101;
-	border-style: solid;
-	border-width: 27px 10.5px 32px 14.3px;
-	border-image-source: url('./img/Box4.svg');
-	border-image-repeat: round;
-	border-image-slice: 27% 10.5% 32% 14.3% fill;
-	border-image-width: 27% 10.5% 32% 14.3%;
-	border-image-outset: 2 8 2 9;
-
-}
-
-.home-page article .wp-block-group:nth-child(n+5) .wp-block-group__inner-container{
-	color: #fff;
-	border-style: solid;
-	border-width: 27px 10.5px 32px 14.3px;
-	border-image-source: url('./img/Box5.svg');
-	border-image-repeat: round;
-	border-image-slice: 27% 10.5% 32% 14.3% fill;
-	border-image-width: 27% 10.5% 32% 14.3%;
-	border-image-outset: 2 8 2 9;
-}
-*/
-
 
 /*------------------------------------*\
     IMAGES
@@ -440,9 +523,20 @@ padding: 0 8 0 11%;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 h2 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	text-transform: uppercase;
 }
+
+h1 {
+	font-size: 2.1em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+article p > a, article > a {
+	color: #00f;
+}
+
 
 
 
