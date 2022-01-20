@@ -299,6 +299,10 @@ input:focus {
 	position: relative;
 }
 
+.archive article h2 {
+	margin-bottom: 0;
+}
+
 .archive .author {
 	font-size: 1.4em;
 	margin: 0 0 0 0;

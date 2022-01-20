@@ -1,3 +1,7 @@
+<?php
+header('Location: '.get_home_url());
+/*
+
 <?php get_header(); ?>
 
 	<main role="main">
@@ -75,3 +79,5 @@
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+?>

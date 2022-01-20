@@ -5,7 +5,9 @@ if(get_theme_mod('work_in_progress') && !is_user_logged_in()) {
 }
 ?>
 
-<?php get_header(); ?>
+<h2>Pleas go <a href="<?php echo get_home_url()  ?>">home</a></h2>
+
+<?php /*get_header(); ?>
 
 	<main role="main">
 		<!-- section -->
@@ -21,6 +23,7 @@ if(get_theme_mod('work_in_progress') && !is_user_logged_in()) {
 		<!-- /section -->
 	</main>
 
-<?php /*get_sidebar(); */?>
 
 <?php get_footer(); ?>
+*/
+?>
